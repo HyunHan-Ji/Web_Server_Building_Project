@@ -132,7 +132,77 @@
 </table>
 
 <h4>파일 include 구조</h4>
+<img src="./Image/include_structure.png">
 
 <h3>3. 구현결과</h3>
+<table>
+<tbody>
+  <tr>
+    <td><img src="./Image/image01.png"></td>
+    <td><b>기본 페이지</b><br>
+        주말, 공휴일 진료유무 데이터가 있는 경우만 표시: 
+        모든 병원이 API 2의 정보에 있는 것이 아님<br>
+        체크: API 2에 정보가 있는 경우만<br>
+        체크해제: 조건의 맞는 모든 병원 </td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image02.png"></td>
+    <td><b>지역별 검색(체크박스 체크해제, 지역만 선택)</b><br>
+        search.jsp<br>
+        (춘천시의 모든 병원)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image03.png"></td>
+    <td><b>지역별 검색(지역만 선택하여 검색)</b><br>
+        search.jsp<br>
+        (춘천시의 병원)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image04.png"></td>
+    <td><b>지역별 검색(지역과 검색어를 통해 검색)</b><br>
+        search.jsp<br>
+        (병원명에 ‘치과’가 들어있는 춘천시의 병원)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image05.png"></td>
+    <td><b>현재위치로 검색(검색어 X)</b><br>
+        searchUserPos.jsp<br>
+        (사용자의 반경 1000m 이내의 병원)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image06.png"></td>
+    <td><b>현재위치로 검색(검색어 O)</b><br>
+        searchUserPos.jsp<br>
+        (사용자의 반경 2000m 이내의 병원명에 ‘치과’    가 들어간 병원)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image07.png"></td>
+    <td><b>“위치보기”버튼누르면 지도에 표시</b><br>
+        search.jsp  searchUserPos.jsp<br>
+        (’e조은치과의원‘의 위치 표시)</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image08.png"></td>
+    <td><b>할증안내</b><br>
+        extra_charge.jsp<br>
+        병원과 약국의 할증정보</td>
+  </tr>
+  <tr>
+    <td><img src="./Image/image09.png"></td>
+    <td><b>프로젝트 개요</b><br>
+        outline.jsp<br>
+        본 프로젝트의 개요를 출력함</td>
+  </tr>
+</tbody>
+</table>
 <h3>4. 기대효과</h3>
+1. 주말, 공휴일에 진료를 원하는 경우, 진료하는 진료기관들을 한눈에 쉽게 확인 가능<br>
+2. 지도에 위치를 출력하여 사용자가 진료기관의 위치를 지도에서 확인 할 수 있음<br>
 <h3>5. 참고자료</h3>
+ API 1 - https://www.data.go.kr/data/15001698/openapi.do<br>
+ API 2 – https://www.data.go.kr/data/15001699/openapi.do – 목록:세부정보<br>
+ 네이버 지도 - https://navermaps.github.io/maps.js/docs/tutorial-digest.example.html<br>
+ 자바빈즈 – https://velog.io/@always/%EC%9E%90%EB%B0%94-%EB%B9%88%EC%A6%88-Java-Beans<br>
+ XML 뷰어 – https://codebeautify.org/xmlviewer<br>
+ 할증안내 – http://www.hira.or.kr/dummy.do?pgmid=HIRAA020033000000#none - 가산제도<br>
+
